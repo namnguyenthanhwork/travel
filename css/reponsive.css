@@ -1,0 +1,76 @@
+/*-----------------------------------
+    PC low & Tablet large resolution
+-----------------------------------*/
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+/*-----------------------------------
+<= Tablet resolution 
+-----------------------------------*/
+@media (max-width: 1199px) {}
+
+@media (max-width: 991px) {
+
+    /* navbar */
+    .nav-right {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .menu-btn i.active::before {
+        content: "\f00d";
+    }
+
+    .nav-mid ul {
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        padding: 80px 0 0;
+        background: var(--primary);
+        transition: all 0.4s ease;
+        -webkit-transition: all 0.4s ease;
+        -moz-transition: all 0.4s ease;
+        -ms-transition: all 0.4s ease;
+        -o-transition: all 0.4s ease;
+    }
+
+    .nav-mid ul li {
+        display: block;
+        padding: 20px 0;
+        margin-right: unset;
+    }
+
+    .nav-mid ul li a {
+        color: var(--white);
+        font-size: 20px;
+        margin-right: unset;
+    }
+
+    .nav-mid ul.active {
+        right: 0;
+        display: unset;
+    }
+
+    /* where u go */
+    .where-u-go .col {
+        margin-bottom: 10px;
+    }
+}
+
+/*------------------------------------
+    Tablet
+----------------------------------*/
+@media (min-width: 768px) and (max-width: 991px) {}
+
+/*------------------------------------
+    Mobile & Mobile landscape
+----------------------------------*/
+@media (max-width: 767px) {}
+
+@media (max-width:575px) {}

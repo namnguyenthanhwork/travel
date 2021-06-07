@@ -7,6 +7,18 @@ section {
     padding: 50px 0;
 }
 
+.where-u-go input:hover,
+.where-u-go select:hover,
+.new-letter input:hover {
+    border: 2px solid var(--secondary);
+}
+
+.where-u-go input:focus,
+.where-u-go select:focus,
+.new-letter input:focus {
+    border: 2px solid var(--primary);
+}
+
 /*  go back home  */
 .scroll-up-btn {
     position: fixed;
@@ -337,16 +349,15 @@ section {
     -o-border-radius: 10px;
 }
 
-.where-u-go a {
+
+a.btn-click {
     display: block;
     width: 150px;
-
     padding: 15px 0;
     margin: 0 auto;
 
     color: var(--white);
-    background: var(--fill);
-
+    background: var(--secondary);
     text-align: center;
 
     border-radius: 10px;
@@ -354,6 +365,16 @@ section {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+a.btn-click:hover {
+    background: var(--primary);
 }
 
 /* ---------------------
@@ -455,6 +476,39 @@ section {
     background: var(--secondary);
 }
 
+/* ----------------
+    Our Newsletter
+------------------- */
+.new-letter {
+    background: url(../img/banner/xnewsletter.png) no-repeat center center;
+}
+
+.new-letter .subscribe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.new-letter .subscribe .row .col {
+    margin-top: 10px;
+}
+
+.new-letter input {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    outline: none;
+    border: 2px solid var(--shadow);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+/* ----------------
+    Popular Places
+------------------- */
 /* ----------------
     Footer
 ------------------- */

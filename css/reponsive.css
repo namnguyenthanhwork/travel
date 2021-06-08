@@ -6,7 +6,11 @@
 /*-----------------------------------
 <= Tablet resolution 
 -----------------------------------*/
-@media (max-width: 1199px) {}
+@media (max-width: 1199px) {
+    .banner-content h1 {
+        font-size: 120px;
+    }
+}
 
 @media (max-width: 991px) {
 
@@ -57,9 +61,19 @@
         display: unset;
     }
 
+    /* banner */
+    .banner-content h1 {
+        font-size: 80px;
+    }
+
     /* where u go */
     .where-u-go .col {
         margin-bottom: 10px;
+    }
+
+    /* our newsletter */
+    .subscribe-title {
+        text-align: center;
     }
 }
 
@@ -71,6 +85,14 @@
 /*------------------------------------
     Mobile & Mobile landscape
 ----------------------------------*/
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+    .title>p {
+        width: 90%;
+    }
+}
 
-@media (max-width:575px) {}
+@media (max-width:575px) {
+    .title>p {
+        width: 90%;
+    }
+}

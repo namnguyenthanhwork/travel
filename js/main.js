@@ -17,8 +17,8 @@ $(document).ready(function () {
 
         $(".scroll-up-btn").click(function () {
             $("html").animate({
-                scrollTop: 0
-            }), $("html").css("scrollBehavior", "auto")
+                scrollTop: 0,
+            }, 1000), $("html").css("scrollBehavior", "auto")
         }),
 
         // click btn navbar
@@ -30,7 +30,7 @@ $(document).ready(function () {
     wow = new WOW({
         boxClass: 'wow', // default
         animateClass: 'animated', // default
-        offset: 50, // default
+        offset: 80, // default
         mobile: true, // default
         live: true // default
     })
@@ -38,25 +38,25 @@ $(document).ready(function () {
 
     // carousel
     $(".banner-list").owlCarousel({
-        autoplayTimeout: 3e3,
-        autoplaySpeed: 1500,
-        margin: 20,
-        loop: !0,
-        nav: true,
-        autoplay: true,
-        dots: false,
-        loop: true,
-        items: 1
-    })
-    $(" .testimonials-carousel").owlCarousel({
-        autoplayTimeout: 3e3,
-        autoplaySpeed: 1500,
-        margin: 20,
-        loop: !0,
-        nav: false,
-        autoplay: true,
-        dots: true,
-        loop: true,
-        items: 1
-    })
+            autoplayTimeout: 3e3,
+            autoplaySpeed: 1500,
+            margin: 20,
+            loop: !0,
+            nav: true,
+            autoplay: true,
+            dots: false,
+            loop: true,
+            items: 1
+        }),
+        $(" .testimonials-carousel").owlCarousel({
+            autoplayTimeout: 3e3,
+            autoplaySpeed: 1500,
+            margin: 20,
+            loop: !0,
+            nav: false,
+            autoplay: true,
+            dots: true,
+            loop: true,
+            items: 1
+        })
 });

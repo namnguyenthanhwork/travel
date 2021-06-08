@@ -9,15 +9,16 @@
     --shadow: #7f89a19a;
     --black: #000;
     --text: #222;
-    --text-light: #444;
+    --text-light: #aab1b7;
     --yellow: #FDAE5C;
     --where-u-go: #040E27;
     --fill: #25304b;
     --destination-items: linear-gradient(to bottom, rgba(4, 14, 39, 0) 0%, rgba(4, 14, 39, 0.7) 100%);
     --price: #1EC6B6;
+    --video: #1EC6B6;
     --place-hv: #0000009a;
     --nav-portfolio: #cee5fdc7;
-
+    --footer: #040E27;
 }
 
 * {

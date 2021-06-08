@@ -162,7 +162,7 @@ section {
 }
 
 .header.sticky .navbar {
-    padding: 5px 0 !important
+    padding: 5px 15px !important
 }
 
 .header.sticky .nav-left a .logo-left {
@@ -353,8 +353,8 @@ section {
     where u go
 ------------------ */
 .where-u-go {
-    background: var(--where-u-go);
     color: var(--white);
+    background: var(--where-u-go);
 }
 
 .where-u-go .row {
@@ -532,9 +532,11 @@ a.btn-click:hover {
 .new-letter input {
     width: 100%;
     height: 50px;
+
     padding: 10px;
     outline: none;
     border: 2px solid var(--shadow);
+
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -621,7 +623,7 @@ a.btn-click:hover {
     margin: 0 auto;
 
     color: var(--white);
-    background: var(--price);
+    background: var(--video);
 
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -646,7 +648,7 @@ a.btn-click:hover {
     width: 100%;
     height: 100%;
 
-    background: var(--price);
+    background: var(--video);
 
     animation: pulse-border 1500ms ease-out infinite;
     -webkit-animation: pulse-border 1500ms ease-out infinite;
@@ -746,6 +748,7 @@ a.btn-click:hover {
     margin: 0 5px;
     width: 12px;
     height: 12px;
+
     border-radius: 50%;
     background: var(--primary);
     -webkit-border-radius: 50%;
@@ -775,9 +778,162 @@ a.btn-click:hover {
     text-align: left;
 }
 
+/* ---------------------------------
+    About Us Page
+------------------------------------*/
+/* our story */
+.story {
+    background: url(../img/about/story.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.story .row {
+    justify-content: center;
+}
+
+h1.headline {
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.story-img img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 20px 20px 0;
+}
+
+.story-content p {
+    text-align: justify;
+    padding: 10px 0;
+    line-height: 1.5;
+}
+
+.story-info span {
+    display: block;
+    font-size: 45px;
+    font-weight: bold;
+    color: var(--secondary);
+    text-align: center;
+    padding: 20px 0 5px;
+}
+
+.story-info p {
+    text-align: center;
+}
+
 /* ----------------
     Footer
 ------------------- */
 .footer {
-    background: var(--where-u-go);
+    color: var(--white);
+    background: var(--footer);
+
+    padding: 60px 0 30px;
+    font-size: 14px;
+}
+
+.footer a,
+.footer p {
+    color: var(--text-light);
+    text-transform: unset;
+
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.footer a:hover {
+    color: var(--secondary);
+}
+
+.footer-top {
+    padding: 0 0 30px;
+}
+
+.footer-top>.row>.col {
+    margin-bottom: 20px;
+}
+
+.footer-top_title {
+    margin-bottom: 30px;
+}
+
+.footer-top_content p {
+    padding: 0 0 8px 0;
+}
+
+.footer-top_content ul li {
+    padding: 5px 0;
+}
+
+.footer-des ul li {
+    width: 50%;
+    float: left;
+    padding: 5px 0;
+}
+
+.footer-top .social-link {
+    margin-top: 10px;
+}
+
+.footer-top .social-link i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+
+    margin: 0 5px 5px 0;
+    text-align: center;
+
+    color: var(--fill);
+    background: var(--primary);
+
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.footer-top .social-link i:hover {
+    color: var(--white);
+}
+
+.instagram .col img {
+    margin-bottom: 10px;
+
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.instagram img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.footer-bot {
+    text-align: center;
+    border-top: 2px solid var(--text-light);
+}
+
+.footer-bot p {
+    padding: 30px 0 0;
+}
+
+.footer-bot i {
+    color: var(--secondary);
 }

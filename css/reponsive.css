@@ -63,7 +63,7 @@
 
     /* banner */
     .banner-content h1 {
-        font-size: 80px;
+        font-size: 70px;
     }
 
     /* where u go */
@@ -91,12 +91,33 @@
     Mobile & Mobile landscape
 ----------------------------------*/
 @media (max-width: 767px) {
+
+    /* banner */
+    .banner-content .btn-booking {
+        padding: 10px 0;
+    }
+
+    .banner .owl-carousel .owl-nav button.owl-next,
+    .banner .owl-carousel .owl-nav button.owl-prev,
+    .banner .owl-carousel button.owl-dot {
+        width: 35px;
+        height: 100px;
+        line-height: 100px;
+    }
+
     .title>p {
         width: 90%;
     }
+
 }
 
 @media (max-width:575px) {
+
+    /* banner */
+    .banner-content h1 {
+        font-size: 40px;
+    }
+
     .title>p {
         width: 90%;
     }

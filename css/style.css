@@ -260,6 +260,7 @@ section {
 }
 
 .banner-items img {
+    display: block;
     width: 100vw;
     height: 100vh;
     object-fit: cover;
@@ -282,8 +283,10 @@ section {
 .banner-content h1 {
     font-family: 'Nothing You Could Do', cursive;
     text-align: center;
-    font-size: 150px;
+    font-size: 130px;
     font-weight: 400;
+    margin: unset;
+    white-space: nowrap;
 }
 
 .banner-content p {
@@ -291,14 +294,14 @@ section {
 }
 
 .banner-content .btn-booking {
-    display: inline-block;
+    display: block;
 
     width: 150px;
     padding: 20px 0;
 
     text-align: center;
-    margin-top: 20px;
-    margin-left: 40%;
+
+    margin: 20px auto 0;
 
     background: var(--primary);
     color: var(--white);
@@ -434,6 +437,7 @@ a.btn-click:hover {
 .destination-items {
     position: relative;
     top: 0;
+    height: 230px;
 
     overflow: hidden;
     margin-bottom: 30px;
@@ -821,6 +825,114 @@ h1.headline {
 
 .story-info p {
     text-align: center;
+}
+
+/* ---------------------------------
+    Contact Page
+------------------------------------*/
+/* contact */
+.contact-describe,
+.contact-form {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.contact-describe h3,
+.contact-form h3 {
+    font-size: 25px;
+}
+
+.contact-describe p {
+    padding: 5px 0;
+}
+
+.contact-icons {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-items i {
+    min-width: 45px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 30px;
+    color: var(--primary)
+}
+
+.contact-items>p {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.contact-items>div>p:first-child {
+    color: var(--secondary);
+    font-weight: 600
+}
+
+.contact-form input {
+    width: 100%;
+    height: 40px;
+    line-height: 40px
+}
+
+.contact-form .row {
+    padding: 10px 0 0
+}
+
+.contact-form .row .col {
+    padding: 10px
+}
+
+.contact-form input {
+    height: 50px;
+    padding: 0 20px;
+    outline: 0;
+    border: 2px solid var(--shadow);
+
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px
+}
+
+.contact-form input:hover {
+    border: 2px solid var(--primary)
+}
+
+.contact-form input:focus {
+    border: 3px solid var(--primary)
+}
+
+.contact-form a {
+    display: block;
+    width: 150px;
+    padding: 12px 50px;
+    outline: 0;
+    margin: 0 auto;
+    text-align: center;
+
+    border: 2px solid var(--primary);
+    background: var(--primary);
+    color: var(--white);
+
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px
 }
 
 /* ----------------

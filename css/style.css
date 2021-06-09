@@ -281,10 +281,9 @@ section {
 }
 
 .banner-content h1 {
-    font-family: 'Nothing You Could Do', cursive;
     text-align: center;
     font-size: 130px;
-    font-weight: 400;
+    font-weight: 700;
     margin: unset;
     white-space: nowrap;
 }
@@ -480,7 +479,7 @@ a.btn-click:hover {
 }
 
 .destination-items img {
-    width: 100%;
+    width: 120%;
     height: auto;
     display: block;
 }
@@ -608,10 +607,9 @@ a.btn-click:hover {
 }
 
 .video h1 {
-    font-family: 'Nothing You Could Do', cursive;
     text-align: center;
     font-size: 120px;
-    font-weight: 400;
+    font-weight: 700;
     color: var(--white);
 }
 

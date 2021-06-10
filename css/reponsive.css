@@ -85,7 +85,11 @@
 /*------------------------------------
     Tablet
 ----------------------------------*/
-@media (min-width: 768px) and (max-width: 991px) {}
+@media (min-width: 768px) and (max-width: 991px) {
+    .nav-filler h2 {
+        font-size: 20px;
+    }
+}
 
 /*------------------------------------
     Mobile & Mobile landscape
@@ -105,8 +109,20 @@
         line-height: 100px;
     }
 
+    .title h1 {
+        font-size: 25px;
+    }
+
     .title>p {
         width: 90%;
+    }
+
+    .nav-filler {
+        width: 85%;
+    }
+
+    .nav-filler h2 {
+        font-size: 17px;
     }
 
 }

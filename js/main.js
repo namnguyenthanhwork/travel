@@ -6,6 +6,40 @@ $(document).ready(function () {
                 $(this).remove();
             });
         }
+        // places isotope and filter 
+        var portfolioIsotope = $('.place-list').isotope({
+            itemSelector: '.place-items_filter'
+        });
+        // // filter functions
+        var filterFns = {
+            numberGreaterThan500: function () {
+                var number = $(this).find('.price').text();
+                return parseInt(number, 10) <= 500;
+            },
+            numberGreaterThan1000: function () {
+                var number = $(this).find('.price').text();
+                return parseInt(number, 10) <= 1000;
+            },
+            numberGreaterThan1500: function () {
+                var number = $(this).find('.price').text();
+                return parseInt(number, 10) <= 1500;
+            },
+            numberGreaterThan2000: function () {
+                var number = $(this).find('.price').text();
+                return parseInt(number, 10) <= 2000;
+            },
+
+        };
+        $('#places-filters').on('change', function () {
+            // get filter value from option value
+            var filterValue = this.value;
+            // use filterFn if matches value
+            filterValue = filterFns[filterValue] || filterValue;
+            portfolioIsotope.isotope({
+                filter: filterValue
+            });
+        });
+
     });
     // scroll back
     $(window).scroll(function () {

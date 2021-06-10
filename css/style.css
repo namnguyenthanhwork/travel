@@ -58,6 +58,7 @@ section {
 .place-items_content,
 .trip-items_content {
     padding: 10px 20px;
+    font-size: 13px;
 }
 
 /*  go back home  */
@@ -588,14 +589,18 @@ a.btn-click:hover {
     padding: 3px 0;
 }
 
+.review {
+    position: relative;
+}
+
 .review span i {
     color: var(--yellow);
     font-size: 14px;
 }
 
 .review a {
-    position: relative;
-    right: -55px;
+    position: absolute;
+    right: 5px;
 }
 
 /* ----------------
@@ -931,6 +936,46 @@ h1.headline {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px
+}
+
+/* ---------------------------------
+    Destination Page
+------------------------------------*/
+.nav-filler {
+    margin: 0 auto 40px;
+    width: 40%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-filler h2 {
+    white-space: nowrap;
+}
+
+#places-filters {
+    width: 100%;
+    outline: none;
+    padding: 10px;
+    border: 2px solid var(--shadow);
+    margin-left: 20px;
+
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+#places-filters:hover {
+    border: 2px solid var(--primary);
 }
 
 /* ----------------

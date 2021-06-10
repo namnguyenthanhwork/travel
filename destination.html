@@ -31,7 +31,7 @@
 
     <!-- Libraries CSS Files -->
     <link rel="stylesheet" href="./lib/animate/animate.min.css">
-    <link rel="stylesheet" href="./lib/loader-page/loader.css">
+    <link rel="stylesheet" href="./css/loader.css">
 </head>
 
 <body>
@@ -85,7 +85,7 @@
             <div class="banner-content">
                 <h1>Điểm Đến</h1>
                 <p>Cùng khám phá những địa điểm du lịch mới đầy hấp dẫn</p>
-                <a href="" class="btn-booking">Explore Now</a>
+                <a href="" class="btn-booking">Đặt Ngay Thôi</a>
             </div>
         </div>
     </div>
@@ -122,14 +122,24 @@
         <div class="container">
             <div class="title">
                 <h1>Địa Điểm Phổ Biến</h1>
-                <p></p>
             </div>
-            <div class="row">
-                <div class="col l-4 ml-4 m-6 sm-12 s-12 wow bounceInUp">
+            <!-- filler -->
+            <div class="nav-filler">
+                <h2>Lọc theo giá</h2>
+                <select name="places-filter" id="places-filters" value-group="price">
+                    <option value="">Tất cả</option>
+                    <option value="numberGreaterThan500">Dưới 500$</option>
+                    <option value="numberGreaterThan1000">Dưới 1000$</option>
+                    <option value="numberGreaterThan1500">Dưới 1500$</option>
+                    <option value="numberGreaterThan2000">Dưới 2000$</option>
+                </select>
+            </div>
+            <div class="row place-list">
+                <div class="col l-4 ml-4 m-6 sm-12 s-12 wow bounceInUp place-items_filter">
                     <div class="place-items">
                         <div class="place-itmes_img">
                             <img src="./img/place/x1.png" alt="places">
-                            <span class="price">$500</span>
+                            <span class="price">1500</span>
                         </div>
                         <div class="place-items_content">
                             <h3>Places 1</h3>
@@ -149,11 +159,11 @@
                     </div>
                 </div>
 
-                <div class="col l-4 ml-4 m-6 sm-12 s-12 wow bounceInUp">
+                <div class="col l-4 ml-4 m-6 sm-12 s-12 wow bounceInUp place-items_filter">
                     <div class="place-items">
                         <div class="place-itmes_img">
                             <img src="./img/place/x2.png" alt="places">
-                            <span class="price">$500</span>
+                            <span class="price">5300</span>
                         </div>
                         <div class="place-items_content">
                             <h3>Places 2</h3>
@@ -173,11 +183,11 @@
                     </div>
                 </div>
 
-                <div class="col l-4 ml-4 m-6 sm-12 s-12 wow bounceInUp">
+                <div class="col l-4 ml-4 m-6 sm-12 s-12 wow bounceInUp place-items_filter">
                     <div class="place-items">
                         <div class="place-itmes_img">
                             <img src="./img/place/x3.png" alt="places">
-                            <span class="price">$500</span>
+                            <span class="price">1500</span>
                         </div>
                         <div class="place-items_content">
                             <h3>Places 3</h3>
@@ -195,11 +205,11 @@
                     </div>
                 </div>
 
-                <div class="col l-4 ml-4 m-6 sm-12 s-12 wow bounceInUp">
+                <div class="col l-4 ml-4 m-6 sm-12 s-12 wow bounceInUp place-items_filter">
                     <div class="place-items">
                         <div class="place-itmes_img">
                             <img src="./img/place/x4.png" alt="places">
-                            <span class="price">$500</span>
+                            <span class="price">940</span>
                         </div>
                         <div class="place-items_content">
                             <h3>Places 4</h3>
@@ -218,11 +228,11 @@
                     </div>
                 </div>
 
-                <div class="col l-4 ml-4 m-6 sm-12 s-12 wow bounceInUp">
+                <div class="col l-4 ml-4 m-6 sm-12 s-12 wow bounceInUp place-items_filter">
                     <div class="place-items">
                         <div class="place-itmes_img">
                             <img src="./img/place/x5.png" alt="places">
-                            <span class="price">$500</span>
+                            <span class="price">400</span>
                         </div>
                         <div class="place-items_content">
                             <h3>Places 5</h3>
@@ -242,11 +252,11 @@
                     </div>
                 </div>
 
-                <div class="col l-4 ml-4 m-6 sm-12 s-12 wow bounceInUp">
+                <div class="col l-4 ml-4 m-6 sm-12 s-12 wow bounceInUp place-items_filter">
                     <div class="place-items">
                         <div class="place-itmes_img">
                             <img src="./img/place/x6.png" alt="places">
-                            <span class="price">$500</span>
+                            <span class="price">1900</span>
                         </div>
                         <div class="place-items_content">
                             <h3>Places 6</h3>
@@ -265,8 +275,6 @@
                         </div>
                     </div>
                 </div>
-
-                <a href="javascript:;" class="btn-click">Địa điểm khác</a>
             </div>
         </div>
     </section>
@@ -428,6 +436,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="./lib/wowjs/wow.min.js"></script>
+    <script src="./lib/isotope/isotope.pkgd.min.js"></script>
     <!-- Main JS -->
     <script src="js/main.js"></script>
 
